@@ -1,0 +1,20 @@
+research on all the activation functions  - https://towardsdatascience.com/activation-functions-neural-networks-1cbd9f8d91d6
+
+all the loss fucntion in classification/ regression  - https://www.analyticsvidhya.com/blog/2019/08/detailed-guide-7-loss-functions-machine-learning-python-code/#:~:text=We%20use%20binary%20cross%2Dentropy,which%20output%20a%20probability%20p.&text=The%20range%20of%20the%20sigmoid,for%20the%20update_weight%20function%20below.
+
+https://towardsdatascience.com/common-loss-functions-in-machine-learning-46af0ffc4d23
+
+
+auc roc - https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
+
+
+gradient descent - https://builtin.com/data-science/gradient-descent
+
+
+keras tuner - https://towardsdatascience.com/hyperparameter-tuning-with-keras-tuner-283474fbfbe
+
+
+optimzer - https://towardsdatascience.com/optimizers-for-training-neural-network-59450d71caf6
+
+
+

@@ -1,0 +1,72 @@
+		Welcome to MS Excel Training
+=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-
+Good evening everyone....
+we will start the session soon...
+Note: Please Download the Practice Files
+----------------------------------------------------------
+Excel File -> Workbook -> Book
+Pages  -> worksheet   -> Sheet
+Ribbon -> 2007 +
+Tabs -> Home Tab, Insert Tab....
+Ctrl Key  -> Help us in Multiple selection
+Ctrl + Enter  -> to fill any common value over selected range
+---------------------
+1. select The Range
+2. type your value
+3. press 'Ctrl + Enter'
+------------------
+Ctrl + +  -> insert cell/row/column
+Ctrl + -  -> Delete cell/row/column
+-----------
+Basic Calculation:
+=C2+D2+E2+F2+G2
+=C2+C3
+=C2+(D2*E2)/(F2-G2)
+----------------------
+how we can update the formula :
+we can use mouse
+---------------------
+Keyboard:
+Ctrl + D  -> Fill Down
+Ctrl + R  -> Fill Right
+or
+Copy & Paste   
+=SUM(C2:G2) -> Return the sum of range of value
+=MAX(C2:G2) -> Return the Maximum value from given range 
+=MIN(C2:G2) -> Return the Minimum value from given range
+=AVERAGE(C2:G2) -> Return the average of given range
+=COUNT(C2:G2)  -> How many cells in range contains numbers only
+---------
+Note :-All the above function accept Single Range,Multiple range as well as combination also
+eg. =SUM(C2:G2,F4:F8,G4:G10,E6,E9,E11)
+------------------------------------------
+CountIf -> Counting with Criteria
+=COUNTIF(C2:G2,">40")  -> counting with one criteria
+----------------
+CountIfs -> Counting with Single/Multiple criteria
+=COUNTIFS(C2:G2,">40",C2:G2,"<80")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

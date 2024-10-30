@@ -1,0 +1,158 @@
+		Welcome to MS Excel Training
+=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-
+Good evening everyone....
+we will start the session soon...
+Note: Please Download the Practice Files
+----------------------------------------------------------
+Excel File -> Workbook -> Book
+Pages  -> worksheet   -> Sheet
+Ribbon -> 2007 +
+Tabs -> Home Tab, Insert Tab....
+Ctrl Key  -> Help us in Multiple selection
+Ctrl + Enter  -> to fill any common value over selected range
+--------------------------------------
+1. select The Range
+2. type your value
+3. press 'Ctrl + Enter'
+---------------------------------------
+Ctrl + +  -> insert cell/row/column
+Ctrl + -  -> Delete cell/row/column
+---------------------------------------
+Basic Calculation:
+=C2+D2+E2+F2+G2
+=C2+C3
+=C2+(D2*E2)/(F2-G2)
+----------------------------------------
+how we can update the formula :
+we can use mouse
+-----------------------------------------
+Keyboard:
+Ctrl + D  -> Fill Down
+Ctrl + R  -> Fill Right
+or
+Copy & Paste   
+=SUM(C2:G2) -> Return the sum of range of value
+=MAX(C2:G2) -> Return the Maximum value from given range 
+=MIN(C2:G2) -> Return the Minimum value from given range
+=AVERAGE(C2:G2) -> Return the average of given range
+=COUNT(C2:G2)  -> How many cells in range contains numbers only
+---------------------------------------------
+Note :-All the above function accept Single Range,Multiple range as well as combination also
+eg. =SUM(C2:G2,F4:F8,G4:G10,E6,E9,E11)
+---------------------------------------------------
+CountIf -> Counting with Criteria
+=COUNTIF(C2:G2,">40")  -> counting with one criteria
+----------------------------------------------------
+CountIfs -> Counting with Single/Multiple criteria
+=COUNTIFS(C2:G2,">40",C2:G2,"<80")
+--------------------------------------------------------
+Day#02: 02-Jan-2022
+--------------------------------------------------------
+=UPPER(B4) -> to change in upper case
+=LOWER(B4) -> to change in lower case
+=PROPER(B4)-> to change in Proper case
+Joins Multiple cells data into one cell
+----------------------------------------
+=CONCATENATE(B4," ",C4)
+&
+=2+3+4
+=B4&" "&C4
+Shortcut for MS OFFICE
+----------------------
+Alt -> Access Key
+Text to column
+=LEFT(B2,6) -> Fetch n char from starting of text string
+=RIGHT(B2,4)-> Fetch n char from ending of text string
+=MID(B2,7,6)-> Fetch n char from middle of text string
+Data Cleaning in Excel:-
+-----------------------
+How to remove extra space from data
+=TRIM(A6)
+Copy & then Paste Special ( Ctrl + Alt + V) As Value
+Logical Function in Excel:
+-------------------------
+IF 
+=IF(D3>50,"Pass","Fail")
+=IF(D3>90,"A",IF(D3>70,"B",IF(D3>50,"C","F")))
+
+Addition with Condition:-
+-----------------------
+SumIf -> Addition with Single condition
+Sumifs-> Addition with Multiple condition
+[]  -> Optional Parameters
+=SUMIF(E3:E16,"yes",D3:D16)
+=SUMIF(E3:E16,"no",D3:D16)
+=SUMIFS(D3:D16,B3:B16,"anurag",E3:E16,"yes")
+--------------------------
+Show Formula -> Ctrl + `(~)
+-------
+Types of References in Excel:-
+----------------------------
+1. Relative Reference
+eg. A2, B2:G22 etc.
+------------------------
+2. Absolute Reference
+eg. $A$2, $B$2:$G$22
+------------------
+F4 -> Function Key -> to change the references
+Fn + F4 -> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

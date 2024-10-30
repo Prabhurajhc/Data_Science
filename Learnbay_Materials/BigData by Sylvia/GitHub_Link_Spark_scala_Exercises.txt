@@ -1,0 +1,11 @@
+Spark with scala analysis on air cooler system --
+https://github.com/silvia-priya/SdAmvia1qwwkc2ssfu0sy7c6qhr8e4curh64j8vglc0pz0m.git
+
+
+Spark with scala analysis on transaction data --
+https://github.com/silvia-priya/Spark_Scala_Transaction_Analysis.git
+
+
+Spark with scala analysis on Inpatient data.
+https://github.com/silvia-priya/SdAmvia1qrycev0vycz7k58f9xspmhpnp7hh5wtz7qf6k99r5q.git
+

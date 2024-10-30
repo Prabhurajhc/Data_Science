@@ -1,0 +1,515 @@
+		Welcome to MS Excel Training
+=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-
+Good evening everyone....
+we will start the session soon...
+Note: Please Download the Practice Files
+----------------------------------------------------------
+Day#01: 26-Dec-2022
+-------------------
+Excel File -> Workbook -> Book
+Pages  -> worksheet   -> Sheet
+Ribbon -> 2007 +
+Tabs -> Home Tab, Insert Tab....
+Ctrl Key  -> Help us in Multiple selection
+Ctrl + Enter  -> to fill any common value over selected range
+--------------------------------------
+1. Select The Range
+2. Type your value
+3. Press 'Ctrl + Enter'
+---------------------------------------
+Ctrl + +  -> insert cell/row/column
+Ctrl + -  -> Delete cell/row/column
+---------------------------------------
+Basic Calculation:
+=C2+D2+E2+F2+G2
+=C2+C3
+=C2+(D2*E2)/(F2-G2)
+----------------------------------------
+how we can update the formula :
+we can use mouse
+-----------------------------------------
+Keyboard:
+Ctrl + D  -> Fill Down
+Ctrl + R  -> Fill Right
+or
+Copy & Paste   
+=SUM(C2:G2) -> Return the sum of range of value
+=MAX(C2:G2) -> Return the Maximum value from given range 
+=MIN(C2:G2) -> Return the Minimum value from given range
+=AVERAGE(C2:G2) -> Return the average of given range
+=COUNT(C2:G2)  -> How many cells in range contains numbers only
+---------------------------------------------
+Note :-All the above function accept Single Range,Multiple range as well as combination also
+eg. =SUM(C2:G2,F4:F8,G4:G10,E6,E9,E11)
+---------------------------------------------------
+CountIf -> Counting with Criteria
+=COUNTIF(C2:G2,">40")  -> counting with one criteria
+----------------------------------------------------
+CountIfs -> Counting with Single/Multiple criteria
+=COUNTIFS(C2:G2,">40",C2:G2,"<80")
+--------------------------------------------------------
+Day#02: 02-Jan-2022
+--------------------------------------------------------
+=UPPER(B4) -> to change in upper case
+=LOWER(B4) -> to change in lower case
+=PROPER(B4)-> to change in Proper case
+Joins Multiple cells data into one cell
+----------------------------------------
+=CONCATENATE(B4," ",C4)
+&
+=2+3+4
+=B4&" "&C4
+Shortcut for MS OFFICE
+----------------------
+Alt -> Access Key
+Text to column
+=LEFT(B2,6) -> Fetch n char from starting of text string
+=RIGHT(B2,4)-> Fetch n char from ending of text string
+=MID(B2,7,6)-> Fetch n char from middle of text string
+Data Cleaning in Excel:-
+-----------------------
+How to Remove Extra Space from data
+=TRIM(A6)
+Clean   -> remove non-printable char
+Copy & then Paste Special ( Ctrl + Alt + V) As Value
+Logical Function in Excel:
+-------------
+->IF Formula:-
+-------------
+=IF(D3>50,"Pass","Fail")
+=IF(D3>90,"A",IF(D3>70,"B",IF(D3>50,"C","F")))
+=IFs(D3>90,"A",D3>70,"B",D3>50,"C",D3<50,"F"))) -> Excel 2019/365
+-----------------------
+Addition with Condition:-
+-------------------------------------------
+SumIf -> Addition with Single condition
+Sumifs-> Addition with Single/Multiple condition
+[]  -> Optional Parameters
+=SUMIF(E3:E16,"yes",D3:D16)
+=SUMIF(E3:E16,"no",D3:D16)
+=SUMIFS(D3:D16,B3:B16,"anurag",E3:E16,"yes")
+--------------------------------------------
+Show Formula -> Ctrl + `(~)
+----------------------------
+Types of References in Excel:-
+----------------------
+1. Relative Reference
+eg. A2, B2:G22 etc.
+----------------------
+2. Absolute Reference
+eg. $A$2, $B$2:$G$22
+-------------
+3. Mixed References 
+eg. $A2, A$2
+----------------------
+F4 -> Function Key -> to change the references
+Fn + F4 -> 
+------------------
+Day#03:-08-Jan-2022
+----------------
+Lookup in Excel
+----------------
+VLookup
+HLookup
+Array -> List of iteam
+----------------------
+=VLOOKUP(A4,'Member Details'!$C$1:$D$14,2,FALSE)
+A4 -> Value -> 101
+   -> Format -> General
+=VLOOKUP(Sheet4!$A$1:$B$14,2,0)
+Limitation Of VLookup :-
+---------------------
+1. Lookup value should be the first column in the table array
+2. VLookup always return the data against the first occurance of id/lookup value.
+--------------------
+VLookup with IFError:-
+---------------------
+=IFERROR(VLOOKUP(A4,'Member Details'!$C$1:$D$14,2,0),"Data Not Found")
+=IFERROR(C5/D5,0)
+Copy(Ctrl + C) and Paste Special ( Ctrl + Alt + V) As value
+=VLOOKUP(D5,$I$1:$J$6,2,TRUE)
+=HLOOKUP(A4,'Customer Website'!$B$2:$O$3,2,FALSE)
+=IFERROR(HLOOKUP(A4,'Customer Website'!$B$2:$O$3,2,FALSE),"")
+=B2&C2
+=VLOOKUP(A17&B17,$A$1:$D$11,4,0)
+=SUMIFS($D$2:$D$11,$B$2:$B$11,A17,$C$2:$C$11,B17)
+Ctrl + +  -> to insert cell/Row/Column
+Ctrl + -  -> to delete cell/Row/Column
+--------------------------------------------
+VLOOKUP Function with Match
+=MATCH(I3,E4:E14,0)
+=-=-=-=-=-=-=-=-=---=-=-=-=-=
+Day#04:-09-Jan-2022 :-
+=-=-=-=-=-=-=-=-=-=-==-=-==-=
+VLOOKUP with Match Function:-
+-----------------------------
+=MATCH(B$17,$A$1:$F$1,0)
+=VLOOKUP($A4,'Member Details'!$A$1:$F$14,MATCH(Members!E$3,'Member Details'!$A$1:$F$1,0),FALSE)
+=IFERROR(VLOOKUP($A4,'Member Details'!$A$1:$F$14,MATCH(Members!E$3,'Member Details'!$A$1:$F$1,0),FALSE),"Data Not Found")
+Advance Lookup -> Reverse Lookup -> Index-Match Function
+--------------------------------------------------------
+1. Choose Function In Excel:
+--------------------------
+Method#01:-Reverse VLOOKUP:-
+---------------------------
+=VLOOKUP(B3,CHOOSE({1,2},$E$9:$E$28,$B$9:$B$28),2,0)
+Method#02: Index-Match Function:-
+---------------------------------
+1.=INDEX(A1:G19,5,3) ->work with Only Row/ Only Column/Table Also
+Match  -> 1D Function 
+2.=index(Table,Row,Column)
+3.=INDEX($B$9:$H$28,MATCH(F3,$E$9:$E$28,0),1)
+4.=INDEX($B$9:$H$28,MATCH(F3,$E$9:$E$28,0),MATCH(G$2,$B$9:$H$9,0))  -> work for one field -> Name only 
+5.=INDEX($B$9:$H$28,MATCH($F3,$E$9:$E$28,0),MATCH(G$2,$B$9:$H$9,0)) -> you can update for other field 
+=index(Table_Array,Match(Lookup_Value,Lookup_id_Column_in_Table_Array,0),Match(Source_Table_header,Table_Array_Header,0))
+--------------------------
+Day#05:-15-Jan-2022
+-------------------------
+Please download the Practice Files: From Drive
+Sort and Filter
+---------------
+Multilevel Sorting
+Filter -> Ctrl  + Shift + L
+~* -> Filter the data that contains * at any position
+-> How to copy the visible cells only in Excel:
+*  = ~*
+?  = ~?
+Alt + ;  -> Select visible cells
+--------------
+Advance Filter:-
+--------------
+Day#06:-16-Jan-2022
+-=-=-=-=-=-=-=-=-=-
+=AND(C4>=100,E4>=15000)
+=IF(AND(C4>=100,E4>=15000),"yes","No")
+=IF(AND(C7>=100,E7>=15000),E7*5%,0)
+=OR(C4>=100,E4>=15000)
+=IF(OR(C4>=100,E4>=15000),"yes","No")
+=IF(OR(D4="y",AND(C4>=100,E4>=15000)),"yes","No")
+---------------------------
+Data Consolidation in Excel:-
+---------------------------
+Subtotal
+Subtotal Function:-> Filter 
+=SUBTOTAL(9,E2:E80)
+-----------------------
+Date and Time Function:-
+-----------------------
+=TODAY() -> Current System date
+=NOW()   -> Current System date with time
+=YEAR(TODAY())  -> return the year value from any date
+=MONTH(TODAY()) -> return the Month value from any date 
+=DAY(TODAY())   -> return the Day value from any date
+=DATE(2022,1,16)
+Calculate the future date after 9 month:-
+=DATE(YEAR(B4),MONTH(B4)+9,DAY(B4))
+Date After 5000 days:-
+=DATE(YEAR(B4),MONTH(B4),DAY(B4)+5000)
+Date after 1 year 9 months and 20 days:-
+=DATE(YEAR(B4)+1,MONTH(B4)+9,DAY(B4)+20)
+F2 -> edit cell value/formula
+-------------------------
+Day#07:
+------------------------
+How to calculate Age in Excel:
+-----------------------------
+=DATEDIF(C11,$F$8,"y")
+=DATEDIF(C11,$F$8,"y")&" years "
+=DATEDIF(C11,$F$8,"y")&" years "&DATEDIF(C11,$F$8,"ym")&" Months "&DATEDIF(C11,$F$8,"md")&" days"
+=NETWORKDAYS(A4,B4,F3:F6)  -> Mon to Fri  -> 20 days
+=NETWORKDAYS.INTL(A4,B4,11,F3:F6) -> Mon to Sat -> Excel 2010+
+=WORKDAY(A9,B9,F3:F6) -> Mon to Fri 
+=WORKDAY.INTL(A9,B9,11,F3:F6) -> Mon to Sat -> Excel 2010+ -> 31-01-2022
+=PRODUCT(A4:A5)  -> Return the Product of given range
+=POWER(B4,B5)  -> Return the B4 to power B5
+or
+=B4^B5
+=SQRT(C4)  -> Return the squareroot of given number
+=QUOTIENT(D4,D5)
+=MOD(E4,E5)
+=ABS(F4)  -> Return the absolute value or value without sign
+--------------------------
+Ctrl + ;  -> current system date fixed
+Ctrl +:   -> current System time fixed
+Transpose Row/Column/Table
+Copy and then Paste Special As Transpose
+=TEXT(B2,"dd")  -> Return the day value
+=TEXT(B2,"ddd")
+=TEXT(B2,"dddd")
+=TEXT(B2,"mm") -> Return the Month value
+=TEXT(B2,"mmm")
+=TEXT(B2,"mmmm")
+=TEXT(B2,"yyyy") -> Return the year value
+=TEXT(B2,"yy")
+=TEXT(C4,"00.00") -> Change number to specific format 
+=TEXT(C5,"000-000-000")
+=NOT(D4<>20)
+=SUBSTITUTE(H3,"-","/",2)
+=FIND("e",C4)
+=RANK(C4,$C$4:$C$8) -> help to find the ranking of a number
+ -dec
+=RANK(C11,$C$11:$C$15,1) help to find the ranking of a number in accending order
+=ROUND(C5,D5)
+=ROUNDUP(C4,D4)
+=ROUNDDOWN(C4,D4)
+=FACT(C4) -> Return the factorial of any number
+=EXACT(C4,D4)
+=EVEN(C4)
+=FORECAST(E11,F4:F9,E4:E9)
+----------------------------
+Day#08:-
+---------------------------
+Pivot Table -> Alt N V
+------------------------
+Slicer -> Excel 2010+
+Show Report Filter Pages -> Report Filter
+Pivot Table Grouping -> Numbers and Dates
+MS Excel 2016+  -> Auto-grouping for date in Pivot Table
+Insert Calculated field in Pivot Table:-
+=-=-=-=-=-=-=-=-=-=-=--=
+Day#09:-
+-=-=-=-=-=-=-=-=-=-=-=
+Pivot Table Continue....
+Ctrl + T  -> create table
+Data Validation:-
+----------------
+Drop Down List
+Security in Excel:-
+-----------------
+All done
+Conditional Formatting
+----------------------
+Day#10:-
+--------
+Conditional Formatting:-
+-----------------------
+=COUNTIFS($B$2:$B$20,B2,$C$2:$C$20,C2,$D$2:$D$20,D2,$E$2:$E$20,E2,$F$2:$F$20,F2,$G$2:$G$20,G2)
+-------------
+=$H2>1
+------------
+=COUNTIFS($B$2:$B$20,$B2,$C$2:$C$20,$C2,$D$2:$D$20,$D2,$E$2:$E$20,$E2)>1
+---------------------
+=COUNTIFS($B$2:$B$20,$B2,$C$2:$C$20,$C2,$D$2:$D$20,$D2,$E$2:$E$20,$E2,$F$2:$F$20,$F2,$G$2:$G$20,$G2)
+=$H2>1
+Compare two list :-
+-------------------
+=COUNTIF($G$5:$G$17,B5)>=1
+Conditional Formatting with drop down list
+=$B3=$G$2 
+Charts in Excel:-
+Excel Security -> Password, Worksheet Protection, Workbook Protection
+----------------------------------------------------------
+Day#11:-     Welcome to MS Excel Training
+=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-
+Good evening everyone....
+we will start the session soon...
+-----------------------------
+=COUNTIF($C$5:C5,$C$5:$C$18)>1
+What_If Analysis  -> setting need to check
+Print
+=-=-=-=-=-=-=
+Day#12 :-     Welcome to MS Excel Training
+=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-
+Good evening everyone....
+we will start the session soon...
+freeze pane  Alt w f f
+Advance Pivot Table and Pivot Chart
+Dashboard Introduction
+=-=-=-=-------------=-=-=-=-=-=-=-=-=-
+Day#13 
+=--=-=-------------=-=-=-=-=-=-=-=-=-=-=
+Macro 
+VBA 
+=-==-=-=-=-=-==-
+Day#14 
+=-=-=-==-==-
+Macro and Query?
+=--=-=-=-=-=-=-=-=-=--=
+Req -> Pivot Table
+
+
+
+Day#15 :-     Welcome to MS Excel Training
+=--=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=-=-=-=-
+Good evening everyone....
+we will start the session soon...
+-------------------------------------------------------
+Question ans Answer ....
+
+VBA Coding
+Alt + F11 -> VBA Editor
+
+Write a code
+1. Macro -> Sub
+2. Function  -> should return a value
+
+Sub Test_Macro()
+
+Range("A1").Value = " Welcome to VBA Programming "
+
+End Sub
+-----------------------
+Sub Test_Macro()
+
+Range("A1:A10").Value = " Welcome to VBA Programming "
+
+
+End Sub
+
+-----------------
+Sub Basic_Sum()
+'Basic Macro for add two numbers.
+'Range("C2").Value = Range("A2").Value + Range("B2").Value
+
+Cells(2, 3).Value = Cells(2, 1).Value + Cells(2, 2).Value
+
+End Sub
+------------------
+Sub Add_two_number()
+ Dim num1 As Integer, num2 As Integer, Sum As Integer
+
+ num1 = Cells(2, 1).Value
+ num2 = Cells(2, 2).Value
+ Sum = num1 + num2
+ Cells(2, 3).Value = Sum
+
+End Sub
+------------------------
+Sub IF_Stmt()
+
+Dim marks As Integer
+Dim result As String
+
+marks = Cells(2, 2).Value
+
+If marks > 50 Then
+
+    result = "Pass"
+    
+End If
+
+Cells(2, 3).Value = result
+
+End Sub
+
+Sub IF_Stmt()
+
+Dim marks As Integer
+Dim result As String
+
+marks = Cells(2, 2).Value
+'result = "Fail"
+
+If marks > 50 Then
+
+    result = "Pass"
+    
+Else
+
+result = "Fail"
+
+End If
+Cells(2, 3).Value = result
+
+End Sub
+----------------------
+Sub IF_Else_IF()
+Dim marks As Integer
+Dim result As String
+marks = Cells(2, 2).Value
+'result = "Fail"
+If marks > 90 Then
+    result = "A"
+Else
+   If marks > 70 Then
+            result = " B"
+   Else
+      If marks > 50 Then
+          result = "C"
+      Else
+         result = " F"
+      End If
+    End If
+End If
+Cells(2, 3).Value = result
+End Sub
+------------------------
+Loop 
+
+Sub IF_Else_IF()
+
+Dim marks As Integer, i As Integer
+Dim result As String
+
+For i = 1 To 10
+
+marks = Cells(i + 1, 2).Value
+
+If marks > 90 Then
+    result = "A"
+Else
+   If marks > 70 Then
+            result = " B"
+   Else
+      If marks > 50 Then
+          result = "C"
+      Else
+         result = " F"
+      End If
+    End If
+    
+End If
+
+Cells(i + 1, 3).Value = result
+
+Next i
+
+
+End Sub
+
+-------------------
+Function mysum(num1 As Integer, num2 As Integer)
+
+Dim sum As Integer
+
+sum = num1 + num2
+
+
+mysum = sum
+
+
+End Function
+
+-----------------------
+Level-1
+www.excel-easy.com/vba.html    
+
+https://www.tutorialspoint.com/vba/index.htm
+
+====================================
+Level-2
+
+https://excelmacromastery.com/vba-tutorial-1/
+
+https://www.quora.com
+
+https://www.mrexcel.com
+
+https://excelchamps.com/
+
+==========================
+Leval -3 for Advance User
+
+http://learnexcelmacro.com
+---------------------------
+
+
+
+
+
+
+
+
+
+
+

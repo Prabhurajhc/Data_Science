@@ -1,0 +1,1 @@
+val df = sqlctx.read.format("csv").option("header","true").option("delimiter",",").option("inferSchema","true").load("/home/hadoop/*.csv")

@@ -1,0 +1,33 @@
+1. start-all.sh --> start all the services
+2. jps --> java processes
+
+hadoop dfsadmin -safemode leave
+
+3. hadoop fs -ls / --> List down the contents in /
+
+4. hadoop fs -ls /user --> List down the contents in directory user
+5. hadoop fs -copyFromLocal <src> <dest> --> copy a file from LFS to HDFS
+
+6. hadoop fs -put <src> <dest> --> copy a file from LFS to HDFS
+7. hadoop fs -get <src> <dest> --> copy a file from HDFS to LFS
+
+
+8. hadoop fs -cat /home/hadoop/file--> reading the contents of file
+
+
+9. hadoop fs -mv <src> <dest> --> Move the file inside hdfs
+
+10.hadoop fs -cp <src> <dest> --> Copy the file inside hdfs
+
+
+11.hadoop fs -appendToFile <<local file1> <local file2> <hdfs file1> --> combines multiple local files to hdfs  
+
+
+12.hadoop fs -getmerge <hdfs file1> <hdfs file2> <local file system> --> combines multiple hdfs files to lfs
+
+
+13.hadoop fs -rm <filename> --> Removes a file in hdfs
+
+14.hadoop fs -setrep  3 <filename> --> Change the replication factor at file level
+
+15.hadoop fsck <filename> - complete details about the path
